@@ -29,7 +29,6 @@ def play(songs)
         (n = i+1) if songs.include?(choice) end
         puts "Playing #{songs[n-1]}" if n != 0 end
       end
-    end
     else
       puts "invalid input, plaease try again"
     end
