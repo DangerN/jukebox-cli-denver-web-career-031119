@@ -21,8 +21,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-    if choice.class == Fixnum && 10>choice>0
-      puts "Playing #{songs[choice-1]}"
+    if choice.class == Fixnum && songs.size>choice>0
+      puts "Playing #{songs[choice-1].split(" - ")[1]}"
     elsif choice.class == String
       n = 0
       songs.each.with_index do |songs , i|
