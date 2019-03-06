@@ -32,9 +32,6 @@ def play(songs)
     else
       puts "invalid input, plaease try again"
     end
-        
-    
-    
 end
 
 def list(songs)
