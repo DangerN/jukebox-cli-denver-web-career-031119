@@ -26,9 +26,9 @@ def play(songs)
     elsif choice.class == String
       n = 0
       songs.each.with_index do |songs , i|
-        n = i+1 if songs.include?(choice)
+        n = i+1 if songs.include?(choice) end
+        puts "Playing #{songs[n-1]}" if n != 0 end
       end
-      puts "Playing #{songs[n-1]}" if n != 0
     else
       puts "invalid input, plaease try again"
     end
