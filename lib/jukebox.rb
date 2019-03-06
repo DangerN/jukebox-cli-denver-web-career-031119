@@ -21,7 +21,15 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   choice = gets.chomp
-  if choice.class == Fixnum
+    if choice.class == Fixnum && 10>choice>0
+      puts "Playing #{songs[choice-1]}"
+    elsif choice.class == String
+      n = 0
+      songs.each_with_index do {song , i}
+        
+        
+    
+    
 end
 
 def list(songs)
