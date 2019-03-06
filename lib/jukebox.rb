@@ -26,7 +26,7 @@ def play(songs)
     elsif choice.class == String
       n = 0
       songs.each_with_index do {songs , i}
-        n = i+1 if song.include?(choice)
+        n = i+1 if songs.include?(choice)
       end
       puts "Playing #{songs[n-1]}" if n != 0
     else
